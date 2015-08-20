@@ -7,7 +7,7 @@ var express  = require('express'),
 
     // Mongoose Schema definition
     Schema = new mongoose.Schema({
-      id       : String, 
+      id       : String,
       title    : String,
       completed: Boolean
     }),
@@ -23,7 +23,7 @@ var express  = require('express'),
  * MONGOLAB_URI=mongodb://example:example@ds053312.mongolab.com:53312/todolist
  * 'mongodb://example:example@ds053312.mongolab.com:53312/todolist'
  */
-mongoose.connect(process.env.MONGOLAB_URI, function (error) {
+mongoose.connect('mongodb://example:example@ds053312.mongolab.com:53312/todolist', function (error) {
     if (error) console.error(error);
     else console.log('mongo connected');
 });
