@@ -7,7 +7,7 @@ var express  = require('express'),
 
     // Mongoose Schema definition
     Schema = new mongoose.Schema({
-      id       : String, 
+      id       : String,
       title    : String,
       completed: Boolean
     }),
@@ -90,4 +90,4 @@ express()
   })
 
   .use(express.static(__dirname + '/'))
-  .listen(process.env.PORT || 5000);
+  .listen(process.env.PORT || 4000);
